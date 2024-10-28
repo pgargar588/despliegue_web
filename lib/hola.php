@@ -1,5 +1,10 @@
 <?php
-// Autor: Manuel Paniagua <mpaniagua@iestrassierra.com>
-print "Introduce tu nombre:";
+// Autor: Pablo <pgargar588@g.educaand.es>
+// El nombre por defecto es Mundo
+require('HolaMundo.php');
+
+print "Introduce tu nombre: ";
 $nombre = trim(fgets(STDIN));
-@print "Hola, {$nombre}\n"
+print new HolaMundo($nombre);
+
+?>
